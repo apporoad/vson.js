@@ -1,0 +1,68 @@
+{
+    "headBody" : {
+        "vid" : null,
+        "isLust" : true,
+        "value" : {
+            "default" : ["1","2"],
+            "type" : "Array"
+        },
+        "validate" : {
+            "type" : "Array",
+            "required" :true
+        },
+        "reminder":{
+            "label" : "表头表体选择"
+        },
+        "input" : {
+            "control"  : "m-checkbox",
+            "dataSource" : { "1" : "表头" , "2" : "表体"}
+        }
+    },
+    "bigModule" : {
+        "isLust" : true,
+        "value" : {
+            "type" : "string"
+        },
+        "validate" : {
+            "type" : "string",
+            "required" :true
+        },
+        "reminder":{
+            "label" : "大模块名",
+            "remark" : "大模块名影响页面目录名"
+        },
+        "input" : {
+            "control"  : "input"
+        }
+    },
+    "pageShowColsCount" : {
+        "isLust" : true,
+        "value" : {
+            "type" : "int",
+            "default" :3 
+        },
+        "validate" : {
+            "type" : "int",
+            "required" :true
+        },
+        "reminder":{
+            "label" : "页面显示列数",
+            "remark" : ""
+        },
+        "input" : {
+            "control"  : "int"
+        }
+    },
+    "fileds":{
+        "isLust" : true,
+        "value" : {
+            "type" : "[{}]",
+            "element" : {
+                "fieldNo" : {
+                    "isLust" : true,
+                    "todo" : "...."
+                }
+            }
+        }
+    }
+}
